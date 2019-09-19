@@ -604,7 +604,7 @@ namespace Pathfinding.Ionic.Zip
                     n = s.Read(buffer, offset, count);
                     done = true;
                 }
-#if NETCF || SILVERLIGHT
+#if NETCF || SILVERLIGHT || NET_STANDARD_2_0
                 catch (System.IO.IOException)
                 {
                     throw;
